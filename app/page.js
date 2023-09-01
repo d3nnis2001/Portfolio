@@ -2,7 +2,7 @@ import { Footer, Navbar } from '../components';
 import { About, Skills, Hero, Projects, Leetcode, Contact } from '../sections';
 
 const Page = () => (
-  <div className='bg-primary-black'>
+  <div className=' bg-primary-black'>
     <Navbar />
     <Hero />
     <About />
