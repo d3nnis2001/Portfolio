@@ -25,7 +25,7 @@ const Hero = () => (
             </svg>
               <div className="flex flex-col items-center justify-end ml-24">
                 <h2 className=" text-white/[.70] text-[28px] font-style: normal font-weight: 400 ">Hello I'm</h2>
-                <h2 className="text-white text-[50px] font-semibold;">Dennis Schielke</h2>
+                <a className="text-white text-[50px] font-semibold;">Dennis Schielke</a>
                 <h2 className="text-white/[.70] text-[36px]">A Cognitive Computer</h2>
                 <h2 className="text-white/[.70] text-[36px]">Science Student</h2>
                 <div className='flex flex-row'>
