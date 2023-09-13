@@ -1,13 +1,14 @@
 'use client';
 
 import { motion } from 'framer-motion';
-
 import styles from '../styles';
 import {staggerContainer, textVariant } from '../utils/motion';
 
 const About = () => (
-  <section className={`${styles.yPaddings} sm:pl-16 pl-6`}>
-    <div className='flex flex-col justify-center items-center pt-[110px]'>
+  <section className='pt-[110px]'>
+    <motion.div variants={staggerContainer} initial="hidden" whileInView="show" viewport={{ once: true, amount: 0.25 }}className={`${styles.innerWidth} mx-auto flex flex-col`}>
+    <motion.div variants={textVariant(0.3)} className="">
+    <div className='flex flex-col justify-center items-center pt-[110px]' id="About Me">
       <a className='text-white font-mainFont text-[50px]'> About Me</a>
       <a className='text-white/[.6] font-mainFont text-[25px]'> Get to know me</a>
       <div className='flex flex-row items-center'>
@@ -30,7 +31,7 @@ const About = () => (
             </a>
           </div>
           <a className="text-white/[.6] text-[30px] font-mainFont mb-6">
-                Carl-Severing Berufskolleg
+                Carl-Severing-Berufskolleg
             </a>
           <div className='flex flex-row justify-start'>
             <a className="text-white text-[30px] font-mainFont mr-6">
@@ -55,6 +56,8 @@ const About = () => (
         </div>
       </div>
     </div>
+    </motion.div>
+    </motion.div>
   </section>
 );
 
